@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Times Tables</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+	<link href="css/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+	<!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body id="home">
+	<div class="container">
+		<div class=" centered">
+			<h2>Benvenuto al gioco sulle tabelline</h2>
+			<p>Seleziona su quali tabelline vuoi esercitarti</p>
+			<div class="tabs">
+				<div class="tab">
+					<h1 class="mx-0">2</h1>
+				</div>
+				<div class="tab">
+					<h1 class="mx-0">3</h1>
+				</div>
+				<div class="tab">
+					<h1 class="mx-0">4</h1>
+				</div>
+				<div class="tab">
+					<h1 class="mx-0">5</h1>
+				</div>
+				<div class="tab">
+					<h1 class="mx-0">6</h1>
+				</div>
+				<div class="tab">
+					<h1 class="mx-0">7</h1>
+				</div>
+				<div class="tab">
+					<h1 class="mx-0">8</h1>
+				</div>
+				<div class="tab">
+					<h1 class="mx-0">9</h1>
+				</div>
+			</div>
+			<a href="#" class="button2" id="start">Iniziamo!</a>
+		</div>
+	</div>
+	<div class="container" style="display: none">
+		<div class="question centered">
+			<p> <span id="multipleA">a</span> x <span id="multipleB">b</span> =
+				<input id="answer-box" type="text">
+			</p>
+			<a href="#" class="button" id="risposta">Invia Risposta</a>
+		</div>
+
+		<div class="correctAnswer message centered" id="correct">
+			<div class="animated fadeIn correct">
+				<p><i class="icon-ok"></i> correct</p>
+			</div>
+		</div>
+		<div class="falseAnswer message centered" id="false">
+			<div class="animated fadeIn false">
+				<p><i class="icon-remove"></i> nope <span id="answerS" class="correct-answer"></span></p>
+
+			</div>
+		</div>
+
+		<div class="score">
+			<span id="correctCount"></span> / <span id="questionCount"></span>
+		</div>
+	</div>
+
+</body>
+
+</html>

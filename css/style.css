@@ -1,0 +1,197 @@
+body, html {
+    margin:0;
+    padding:0;
+    font-family: 'Open Sans', sans-serif;
+    color:white;
+    font-size:32px;
+}
+
+:focus {
+    outline: 0;
+}
+.container{
+    width:100vw;
+    height:100vh;
+    background-color: #333333;
+}
+
+.question {
+    position:absolute;
+    text-align:center;
+    width:100%;
+    height:100%;
+}
+.score {
+    position:absolute;
+    top:10px;
+    right:10px;
+    font-size:0.5em;
+}
+input {
+    font-family: 'Open Sans', sans-serif;
+    background: none;
+    padding:0;
+    border:none;
+    color:white;
+    display:inline;
+    width:3em;
+    border-bottom:1px solid silver;
+    font-size:32px;
+}
+.message {
+    display: none;
+}
+
+.centered{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    transform: translateY(100%);
+}
+
+.message div {
+    position:absolute;
+    width:100%;
+    height:100%;
+    text-align:center;
+}
+.visible {
+    display:block;
+}
+.correctAnswer .correct, .falseAnswer .false {
+    display:block;
+}
+.correct {
+    background:#07795d;
+}
+.false {
+    background:#79071f;
+}
+
+.correct-answer {
+    display: block;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.tabs{
+    display:flex;
+    justify-content: space-between;
+    margin: 20px 20px;
+}
+.tab{
+    height:100px;
+    width:100px;
+    background-color:#666;
+}
+.active{
+    background-color:#247cff;
+}
+
+.mx-0{
+    margin: 0;
+}
+.button {
+    text-align:center;
+    top:51%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    position:absolute;
+    text-transform: uppercase;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 16px 32px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #247cff;
+    border-radius: 4px;
+    background-color: #247cff;
+    -webkit-transition: border-color 300ms ease, background-color 300ms ease, -webkit-transform 300ms ease;
+    transition: border-color 300ms ease, background-color 300ms ease, -webkit-transform 300ms ease;
+    transition: border-color 300ms ease, transform 300ms ease, background-color 300ms ease;
+    transition: border-color 300ms ease, transform 300ms ease, background-color 300ms ease, -webkit-transform 300ms ease;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.button2 {
+    text-transform: uppercase;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 20px;
+    padding: 16px 32px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #247cff;
+    border-radius: 4px;
+    background-color: #247cff;
+    -webkit-transition: border-color 300ms ease, background-color 300ms ease, -webkit-transform 300ms ease;
+    transition: border-color 300ms ease, background-color 300ms ease, -webkit-transform 300ms ease;
+    transition: border-color 300ms ease, transform 300ms ease, background-color 300ms ease;
+    transition: border-color 300ms ease, transform 300ms ease, background-color 300ms ease, -webkit-transform 300ms ease;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+/* Animation */
+ .animated {
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    -moz-animation-name: fadeIn;
+    -o-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
